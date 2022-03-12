@@ -125,7 +125,7 @@ class App extends Component {
               className="card  "
               style={{ margin: "30px", fontStyle: "bold" }}
             >
-              <p className=" text-center">LOADING...PLEASE WAIT...></p>
+              <p className=" text-center">LOADING...PLEASE WAIT...</p>
             </div>
           ))
         : (content = (
