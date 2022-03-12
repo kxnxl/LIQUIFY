@@ -4,18 +4,15 @@ class Main extends Component {
   render() {
     return (
       <div id="content" className=" mt-5 align-center">
-        <table
-          className="table text-primary table-light text-center"
-          style={{ opacity: "0.8" }}
-        >
+        <table className="table text-primary  text-center">
           <thead>
-            <tr style={{ color: "black" }}>
+            <tr style={{ color: "white", fontWeight: "bold" }}>
               <th scope="col">Staking balance</th>
               <th scope="col">Reward balance</th>
             </tr>
           </thead>
           <tbody>
-            <tr style={{ color: "black" }}>
+            <tr style={{ color: "white" }}>
               <td>
                 {window.web3.utils.fromWei(this.props.stakingBalance, "Ether")}{" "}
                 USDT
@@ -42,7 +39,7 @@ class Main extends Component {
               <label className="ml-2">
                 <b>Stake Tokens</b>
               </label>
-              <span className="float-right mr-3">
+              <span className="  float-right  mr-3">
                 Balance:
                 {window.web3.utils.fromWei(this.props.tetherBalance, "Ether")}
               </span>

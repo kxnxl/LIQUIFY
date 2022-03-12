@@ -125,7 +125,7 @@ class App extends Component {
               className="card  "
               style={{ margin: "30px", fontStyle: "bold" }}
             >
-              <div className="card-title text-center">Loading please...</div>
+              <p className=" text-center">LOADING...PLEASE WAIT...></p>
             </div>
           ))
         : (content = (
@@ -152,12 +152,7 @@ class App extends Component {
             // style={{ maxWidth: "600px", minHeight: "100vm" }}
           >
             <div className="row">
-              <main
-                role="main"
-                className="col-lg-12 ml-auto mr-auto"
-                style={{ maxWidth: "600px" }}
-                style={{ minHeight: "100vm" }}
-              >
+              <main role="main" className="col-lg-12 ml-auto mr-auto">
                 <div>{content}</div>
               </main>
             </div>
