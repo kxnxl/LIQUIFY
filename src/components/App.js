@@ -44,7 +44,7 @@ class App extends Component {
       const rwd = new web3.eth.Contract(RWD.abi, rwdData.address);
       let rwdBalance = await rwd.methods.balanceOf(this.state.account).call();
       this.setState({
-        rwdBalance: rwdBalance.toString(),
+        rewardBalance: rwdBalance.toString(),
         rwd: rwd,
       });
     } else {
@@ -122,8 +122,8 @@ class App extends Component {
         ? (content = (
             <div
               id="loader"
-              className="card  "
-              style={{ margin: "30px", fontStyle: "bold" }}
+              // className="card  "
+              style={{ margin: "30px", fontStyle: "bold", color: "white" }}
             >
               <p className=" text-center">LOADING...PLEASE WAIT...</p>
             </div>
@@ -147,10 +147,7 @@ class App extends Component {
             <ParticleSettings />
           </div>
           <Navbar account={this.state.account} />
-          <div
-            className="container-fluid mt-5 "
-            // style={{ maxWidth: "600px", minHeight: "100vm" }}
-          >
+          <div className="container-fluid mt-5 " style={{ maxWidth: "900px" }}>
             <div className="row">
               <main role="main" className="col-lg-12 ml-auto mr-auto">
                 <div>{content}</div>

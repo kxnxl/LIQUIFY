@@ -12,7 +12,7 @@ class ParticleSettings extends Component {
           options={{
             background: {
               color: {
-                value: "#0d47a1",
+                value: "#86cfda",
               },
             },
             fpslimit: 60,
